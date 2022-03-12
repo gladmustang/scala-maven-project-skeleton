@@ -72,6 +72,23 @@
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
         <version>4.5.6</version>
+        <configuration>
+          <launchers>
+            <launcher>
+              <id>default</id>
+              <mainClass>com.lebao.demo.App</mainClass>
+              <!--  args are optional-->
+<!--              <args>-->
+<!--                <arg>arg1</arg>-->
+<!--              </args>-->
+              <!-- jvmArgs are optional -->
+<!--              <jvmArgs>-->
+<!--                <jvmArg>-Xmx128m</jvmArg>-->
+<!--                <jvmArg>-Djava.library.path=...</jvmArg>-->
+<!--              </jvmArgs>-->
+            </launcher>
+          </launchers>
+        </configuration>
         <executions>
           <execution>
             <goals>
@@ -83,7 +100,6 @@
                 <arg>-dependencyfile</arg>
                 <arg>${project.build.directory}/.scala_dependencies</arg>
               </args>
-
             </configuration>
           </execution>
         </executions>
