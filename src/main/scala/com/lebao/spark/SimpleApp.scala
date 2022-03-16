@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 object SimpleApp {
   def main(args: Array[String]) {
-    val logFile = "C:/work/tools/spark/spark-3.1.3-bin-hadoop3.2/README.md" // Should be some file on your system
+    val logFile = "file://C:/work/tools/spark/spark-3.1.3-bin-hadoop3.2/README.md" // Should be some file on your system
 //    val spark = SparkSession.builder.appName("Simple Application").master("local").getOrCreate()
 val spark = SparkSession.builder.appName("Simple Application").getOrCreate()
     val logData = spark.read.textFile(logFile).cache()
