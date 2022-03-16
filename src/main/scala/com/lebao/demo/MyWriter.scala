@@ -1,5 +1,7 @@
 package com.lebao.demo
 
-class MyWriter {
-
+abstract class MyWriter {
+  var message: String = "null"
+  def setMessage(message:String):Unit
+  def printMessage(): Unit
 }

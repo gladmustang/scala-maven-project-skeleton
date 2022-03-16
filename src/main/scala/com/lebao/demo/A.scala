@@ -1,6 +1,7 @@
 package com.lebao.demo
 
-class A () {
-  def add(i:Int) = "abc"
-}
+object A {
+  def add(i:Int, j:Int) = i+j
 
+
+}

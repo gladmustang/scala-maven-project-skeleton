@@ -1,0 +1,1 @@
+spark-submit --class "com.lebao.spark.SimpleApp" --master local[4] target/scala-maven-project-skeleton-1.0-SNAPSHOT.jar
